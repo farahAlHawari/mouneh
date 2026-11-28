@@ -1,7 +1,7 @@
 import { Container } from "@/components/shared/Container"
+import { ProductCard } from "@/components/shared/ProductCard"
 import { SectionTitle } from "@/components/shared/SectionTitle"
 import { BEST_SELLERS } from "../data"
-import { ProductCard } from "./ProductCard"
 
 export function BestSellersSection() {
     return (
