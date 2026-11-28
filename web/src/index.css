@@ -1,13 +1,44 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/geist";
+@import "@fontsource-variable/cairo";
+
+@font-face {
+  font-family: "Cocon Next Arabic";
+  src: url('COCON-NEXT-ARABIC-LIGHT.OTF') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cocon Next Arabic";
+  src: url("/fonts/COCON-NEXT-ARABIC-REGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cocon Next Arabic";
+  src: url("/fonts/COCON-NEXT-ARABIC-BOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
     --font-heading: var(--font-sans);
-    --font-sans: 'Geist Variable', sans-serif;
+    --font-sans: 'Cocon Next Arabic', 'Cairo Variable', sans-serif;
+
+    /* Brand palette */
+    --color-brand-cream: #FBF5EA;
+    --color-brand-sand: #EFE3CF;
+    --color-brand-orange: #E8A35C;
+    --color-brand-olive: #5B6B3A;
+    --color-brand-burgundy: #7A1F2B;
+    --color-brand-ink: #2B1A14;
+
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,24 +80,24 @@
 }
 
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
+    --background: #FBF5EA;
+    --foreground: #2B1A14;
     --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --card-foreground: #2B1A14;
+    --popover: #FBF5EA;
+    --popover-foreground: #2B1A14;
+    --primary: #7A1F2B;
+    --primary-foreground: #FBF5EA;
+    --secondary: #EFE3CF;
+    --secondary-foreground: #2B1A14;
+    --muted: #EFE3CF;
+    --muted-foreground: oklch(0.45 0.02 50);
+    --accent: #EFE3CF;
+    --accent-foreground: #2B1A14;
     --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --border: #E6D8C0;
+    --input: #E6D8C0;
+    --ring: #7A1F2B;
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
